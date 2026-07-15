@@ -1,0 +1,26 @@
+git log // this show complete history of the commit
+
+git log                 # Detailed commit history
+git log --oneline       # Short one-line history
+git log -5              # Latest 5 commits
+git log --oneline -10   # Latest 10 commits in short format
+
+git log --author="cheeras" # filter log based on author name
+git log --before="2026-07-15"
+git log --after="2026-07-10"
+git log --after="one week ago"
+git log --grep="files"//search for the file name
+git log --grep="us101"//search for userstory
+
+git log 4d7306d...27a184e //range of commit
+
+
+git log --stat // very very important
+//it will show complete list of modified files
+
+git log --stat tells you HOW MUCH changed.
+git log --patch tells you WHAT EXACTLY changed.
+
+git log src/pages/SearchPage.java // how many changes happened for particular file
+
+
