@@ -1,3 +1,5 @@
+//this is new line added in this file
+
 git show // what are changes for the last commit 
 
 git show HEAD and git show both are same

@@ -1,0 +1,5 @@
+git diff // what recent changes are happened in you working copy(eclipse , vscode .. what ever the IDE)
+//compares your Working Directory with the Staging Area (Index).
+git diff <commit id1> <commit id2>
+
+ git diff 9982254 12caef6

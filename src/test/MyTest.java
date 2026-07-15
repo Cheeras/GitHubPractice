@@ -6,6 +6,8 @@ public class MyTest {
         String name = "MyTest";
         int age = 20;
         String city = "Seattle";
-        System.out.println(name +" " + age +" "+city);
+        String country = "USA";
+        int salary = 100;
+        System.out.println(name +" " + age +" "+city+" "+country);
     }
 }
