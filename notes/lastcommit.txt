@@ -1,0 +1,12 @@
+git show // what are changes for the last commit 
+
+git show HEAD and git show both are same
+
+git show HEAD~2 // to see the changes before 2 commits
+
+git show HEAD~1 // to see the changes before 1 commit
+
+$ git show HEAD:src/test/MyTest.java // this show what version of the MyTest.java it will complete code of
+// the particular file 
+
+git show ed01147// what are changes happened for the particular commit id
