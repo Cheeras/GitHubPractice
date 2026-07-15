@@ -2,6 +2,6 @@ package test;
 
 public class RegistrationTest {
     public static void main(String[] args) {
-        
+        System.out.println("I am from Registration Test class");
     }
 }
