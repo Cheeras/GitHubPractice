@@ -1,0 +1,4 @@
+git log //shows commit-by-commit history. 
+git shortlog //summarizes commit history author-wise
+
+git blame //is used to find who last changed each line of a file and in which commit
