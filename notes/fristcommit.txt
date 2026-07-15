@@ -1,0 +1,44 @@
+git command to first commit and push changes in to github.com
+=============================================================
+Step 1: Go to the Project Directory through git bash
+Install git bash if you does have in your local 
+https://git-scm.com/install/windows
+
+Step 2:  Open the gitbash command in root of your project folder and type "git init" command and enter
+Initialized empth Git repository in example:
+c/Users/Shankar/Documents/Workspace/GitHubCourse/GitHubSession/.git
+
+Step 3: .git hidden folder will be created 
+        to see list of hidden files type following command "ls -alt"
+
+Step 4: check any remote repo is associated with your local repo with command "git remote -v"
+if it is showing empty means no repository is associated 
+
+Step 5: Associate remote repo to local repo
+git remote add origin <repository-url>
+
+Step 6: git status
+
+Step 7: add .gitignore file and add following 
+# Java compiled files
+*.class
+
+# Java build output
+bin/
+
+# VS Code settings
+.vscode/
+
+Step 8: git add . // this will add all changed/modefied/newlycreaed working copy files in stage
+
+Step 9: git commit -m "commit message"
+//this will changes to only in local repository not remote repository
+
+Step 10: git push origin master
+//this will successfully push your changes to remote repo which is in github
+
+Step 11: Goto github repo and verify 
+bingo you can your changes are present over there
+
+
+    
