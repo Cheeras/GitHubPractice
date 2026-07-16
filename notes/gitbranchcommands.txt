@@ -1,0 +1,67 @@
+git branch // to get list of branchs and currently in which branch
+//how to create feature branch
+//Approach 1:
+git branch <feature branch name>//first create the newfeature branch
+git checkout <feature branch name>//and then checkout to that branch
+
+//Approach 2:
+//we can create the branch and checkout to that branch directly in single git command
+git checkout -b <branch name>
+now check the git status command, need to be on the newly created branch
+
+//Switch 
+// to switch to specific branch
+git switch <branch name>
+
+//checkout
+git checkouu <branch name>
+
+//to delete specific branch
+git branch -D <branch name>
+
+Shankar@DESKTOP-G8IGDE1 MINGW64 ~/Documents/Workspace/GitHubCourse/GitHubSession (master)
+$ git branch
+  cart
+* master
+  shankar
+  viewCart
+
+Shankar@DESKTOP-G8IGDE1 MINGW64 ~/Documents/Workspace/GitHubCourse/GitHubSession (master)
+$ git branch -D shankar
+Deleted branch shankar (was c2bcb5b).
+
+//=============================
+//difference between master and viewCart branch
+Shankar@DESKTOP-G8IGDE1 MINGW64 ~/Documents/Workspace/GitHubCourse/GitHubSession (master)
+$  git log master..viewCart
+commit cbb1e4bd0caa617e4afd0869521f72f6b5208075 (origin/viewCart, viewCart)
+Author: Cheeras <shankarcheerala@gmail.com>
+Date:   Thu Jul 16 10:23:30 2026 +0530
+
+    updated cartPage
+
+commit 1b98cb7dcc50eebfc25c0375bd5d0080872232f4
+Author: Cheeras <shankarcheerala@gmail.com>
+Date:   Thu Jul 16 10:21:14 2026 +0530
+
+    ViewCartPageTest changes are added
+
+commit 703657c578ee70bfd205ab892cd8c75f2251c550
+Author: Cheeras <shankarcheerala@gmail.com>
+Date:   Thu Jul 16 10:17:41 2026 +0530
+
+    Added ViewCartPage changes
+
+=====================================
+//What is exact differece between master branch and viewCart brach code changes 
+
+git diff  master..viewCart
+
+//===========================
+//git command to see list of remote branches
+
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/cart
+  origin/master
+  origin/viewCart
