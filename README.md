@@ -1,3 +1,139 @@
+# GitHub Practice Project
+
+This project is a **Java-based web application** designed for practicing **Git and GitHub workflows**. It includes pages for login, registration, search, cart, and view cart functionality, along with corresponding test files.
+
+---
+
+## Git & GitHub Notes
+
+This section summarizes the Git commands and workflows documented in the `notes/` folder.
+
+---
+
+### 1. First Commit & Push to GitHub
+
+The file [`notes/fristcommit.txt`](notes/fristcommit.txt) outlines the step-by-step process for making the first commit and pushing changes to a GitHub repository:
+
+| Step | Command / Action | Description |
+|------|-----------------|-------------|
+| 1 | `git init` | Initialize a new Git repository in the project root |
+| 2 | `git remote add origin <repository-url>` | Associate a remote repository with the local repo |
+| 3 | `git status` | Check the current state of the working directory |
+| 4 | Add `.gitignore` | Exclude `*.class`, `bin/`, and `.vscode/` from tracking |
+| 5 | `git add .` | Stage all changed/new files |
+| 6 | `git commit -m "message"` | Commit changes to the local repository |
+| 7 | `git push origin master` | Push committed changes to the remote GitHub repository |
+
+---
+
+### 2. Branch Commands
+
+The file [`notes/gitbranchcommands.txt`](notes/gitbranchcommands.txt) covers branch management:
+
+| Command | Description |
+|---------|-------------|
+| `git branch` | List all branches and show the current branch |
+| `git branch <name>` | Create a new branch |
+| `git checkout <name>` | Switch to an existing branch |
+| `git checkout -b <name>` | Create and switch to a new branch in one command |
+| `git switch <name>` | Switch to a specific branch |
+| `git branch -D <name>` | Delete a specific branch |
+| `git branch -r` | List remote branches |
+| `git log master..<branch>` | Show commits in a feature branch not in master |
+| `git diff master..<branch>` | Show code differences between master and another branch |
+
+**Existing branches:** `master`, `cart`, `viewCart`
+
+---
+
+### 3. Diff Commands
+
+The file [`notes/gitdiffcommands.txt`](notes/gitdiffcommands.txt) explains how to compare changes:
+
+| Command | Description |
+|---------|-------------|
+| `git diff` | Compare working directory with the staging area |
+| `git diff <commit1> <commit2>` | Compare changes between two specific commits |
+
+---
+
+### 4. Log Commands
+
+The file [`notes/logcommands.txt`](notes/logcommands.txt) covers viewing commit history:
+
+| Command | Description |
+|---------|-------------|
+| `git log` | Detailed commit history |
+| `git log --oneline` | Short one-line commit history |
+| `git log -5` | Latest 5 commits |
+| `git log --oneline -10` | Latest 10 commits in short format |
+| `git log --author="name"` | Filter commits by author |
+| `git log --before="date"` | Filter commits before a date |
+| `git log --after="date"` | Filter commits after a date |
+| `git log --grep="keyword"` | Search commits by keyword |
+| `git log <commit1>...<commit2>` | View commits in a range |
+| `git log --stat` | Show list of modified files per commit |
+| `git log --patch` | Show exact changes per commit |
+| `git log <file>` | Show commit history for a specific file |
+
+---
+
+### 5. Shortlog & Blame
+
+The file [`notes/gitshortlog.txt`](notes/gitshortlog.txt) covers:
+
+| Command | Description |
+|---------|-------------|
+| `git shortlog` | Summarize commit history grouped by author |
+| `git blame <file>` | Show who last changed each line of a file and in which commit |
+
+---
+
+### 6. Last Commit / Show Commands
+
+The file [`notes/lastcommit.txt`](notes/lastcommit.txt) explains how to inspect commits:
+
+| Command | Description |
+|---------|-------------|
+| `git show` | Show changes from the last commit (same as `git show HEAD`) |
+| `git show HEAD~1` | Show changes from one commit before HEAD |
+| `git show HEAD~2` | Show changes from two commits before HEAD |
+| `git show HEAD:<file>` | Show the full content of a file at the latest commit |
+| `git show <commit-id>` | Show changes for a specific commit ID |
+
+---
+
+### 7. Git Work Flow
+
+The folder [`notes/Git_Work_Flow/`](notes/Git_Work_Flow/) contains a visual diagram (`Gitworkflowwithfeaturebranch.png`) illustrating the Git workflow with feature branches.
+
+---
+
+## Folder Structure
+
+```
+GitHubSession/
+├── bin/                  # Compiled output files
+├── lib/                  # Dependencies
+├── notes/                # Git command references and documentation
+│   ├── fristcommit.txt
+│   ├── gitbranchcommands.txt
+│   ├── gitdiffcommands.txt
+│   ├── gitshortlog.txt
+│   ├── lastcommit.txt
+│   ├── logcommands.txt
+│   └── Git_Work_Flow/
+│       └── Gitworkflowwithfeaturebranch.png
+├── src/                  # Source code
+│   ├── pages/            # Java page classes
+│   └── test/             # Java test classes
+├── .gitignore            # Git ignore rules
+├── .vscode/              # VS Code configuration
+└── README.md             # This file
+```
+
+---
+
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
